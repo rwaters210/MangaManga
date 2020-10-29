@@ -5,3 +5,7 @@ body {
 h2 {
     color: lime;
 }
+
+#MangaList {
+    font-size: 60;
+}
