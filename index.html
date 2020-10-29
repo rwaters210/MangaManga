@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script src="process.js"></script>
 </head>
 <body>
     <h1 style="text-align:center">Manga Manga</h1>
@@ -13,31 +14,39 @@
     <button  onclick="hide()" > Start</button>
     </p>
     
-    <div id="Questions" style="text-align:center">
-        <h2>Category</h2>
+    <div id="Questions" style="text-align:center" >
+        <h2>Age</h2>
         <form> 
-            <select>
-              <option>Action</option>
-              <option>Romance</option>
-              <option>Thriller</option>
+            <select id="list1" >
+              <option value="Teen" >8-15</option>
+              <option value="Young Adult" >16-24</option>
+              <option value="Adult" >24-65</option>
             </select>
             
-            <h2>Length</h2>
-            <select>
-              <option>Short</option>
-              <option>Medium</option>
-              <option>Long</option>
+            <h2>Category</h2>
+            <select id="list2" >
+              <option value="Action" >Action</option>
+              <option value="Thriller" >Thriller</option>
+              <option value="Fantasy" >Fantasy</option>
             </select>
             
-            <h2>Question 3</h2>
-            <select>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
+            <h2>Length of Manga</h2>
+            <select id="list3" >
+              <option value="Short" >Short</option>
+              <option value="Medium" >Medium</option>
+              <option value="Long" >Long</option>
             </select>
            
         </form>
-        <button  onclick="getList()" >Submit</button>
+        <button  onclick="getSelectValues()" >Submit</button>
+        
+        <br>
+        <br>
+        
+    </div>
+    
+    <div style="text-align:center" id ="MangaList">
+        Practice connecting API!!!
     </div>
     
     <br>
