@@ -175,6 +175,8 @@ var lib = {
         Title: "The Title 27", 
         Author: "The Author 27", 
         Published: "The Published Date 27" 
+=======
+>>>>>>> d9a5234639a9ff03e49c4453b096f7f8bf177758
     }
     
 };

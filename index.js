@@ -1,26 +1,15 @@
-console.log("Hello world");
+console.log("Hello Manga Readers");
 
 function success(data) {
     console.log("success=" + data);
-    $("#answer").text("Answer=" + data);
+    $("#MangaList").text("Manga List = " + data);
 }
 
-
-let dict = { 
-    one: {
-        Title: "My Hero Academia, The Promise Neverland, & Naruto", 
-        Author: "The Author", 
-        Published: "The Published Date" 
-    },
-    
-    two: {
-        Title: "The Title 2", 
-        Author: "The Author 2", 
-        Published: "The Published Date 2" 
-    }
-    
-            };
-
+function send(number) {
+    let url = "/getMangalist/number/" + number;
+    console.log(url);
+    $.get(url, success);
+}
 
 function hide() {
      let x = document.getElementById("Questions");
@@ -31,11 +20,6 @@ function hide() {
       }
     //document.getElementById("Questions").classList.toggle("show");
     console.log("It worked");
-}
-
-function getList() {
-    alert("Here is the list of books:.....");
-    console.log("List Retrieved");
 }
 
 function getSelectValues() {
@@ -86,32 +70,19 @@ function getSelectValues() {
             //nothing
     }
     
-    //let x = getMangalist(n);
-    
-    document.getElementById("MangaList").innerHTML = getMangalist(n);
+    send(n);
     
     console.log(n);
     
-    console.log("Values Selected");
+    console.log("Score sent to server" + n);
 }
-
-function getMangalist(number) {
-    if(number == 6) {
-        //let x = dict[2];
-        //let answer = "";
-        //answer += x['Title'];
-        console.log(dict[one].Title);
-        return (dict[one].Title + dict[one].Author);
-    } else {
-        return "Other List...";
-    }
-}
-
 
 
 //start button that intiates conversation
 function setup() {
-    $("#start").click(hide);
+    //$("#Questions").click(hide);
+    $("#submit").click(getSelectValues);
 }
 
 $(document).ready(setup);
+
