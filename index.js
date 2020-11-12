@@ -2,7 +2,7 @@ console.log("Hello Manga Readers");
 
 function success(data) {
     console.log("success=" + data);
-    $("#MangaList").text("Manga List = " + data);
+    $("#MangaList").text("Manga List: "+ data);
 }
 
 function send(number) {
@@ -27,16 +27,16 @@ function getSelectValues() {
     var selectedValue2 = document.getElementById("list2").value;
     var selectedValue3 = document.getElementById("list3").value;
     
-    let n = 0;
+    let n = "";
     switch(selectedValue1) {
         case "Teen":
-            n += 1;
+            n += "1";
         break;
         case "Young Adult":
-            n += 2;
+            n += "2";
         break;
         case "Adult":
-            n += 3;
+            n += "3";
         break;    
         default:
             //nothing
@@ -44,13 +44,13 @@ function getSelectValues() {
     
     switch(selectedValue2) {
         case "Action":
-            n += 1;
+            n += "4";
         break;
         case "Thriller":
-            n += 2;
+            n += "5";
         break;
         case "Fantasy":
-            n += 3;
+            n += "6";
         break;    
         default:
             //nothing
@@ -58,13 +58,13 @@ function getSelectValues() {
     
     switch(selectedValue3) {
         case "Short":
-            n += 1;
+            n += "7";
         break;
         case "Medium":
-            n += 2;
+            n += "8";
         break;
         case "Long":
-            n += 3;
+            n += "9";
         break;    
         default:
             //nothing
@@ -85,4 +85,3 @@ function setup() {
 }
 
 $(document).ready(setup);
-
