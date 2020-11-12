@@ -1,3 +1,14 @@
+const { genre } = require('jikan-nodejs');
+
+async function getAnimesByGenre() {
+  const animes = await genre.animesByGenre(1, { limit: 1 }); // parameters: genreId, { limit }
+  console.log(animes); // print 10 animes of genre 1
+}
+
+getAnimesByGenre();
+
+//module.exports = require('./dist').default
+
 console.log("Hellllloooooo!!!!");
 
 const express = require('express');
@@ -17,8 +28,8 @@ function index(req, res) {
 var lib = { 
     1: {
         Title: "My Hero Academia, The Promise Neverland, & Naruto", 
-        Author: "Kohei Horikoshi, Kaiu Shirai, Masashi Kishimoto", 
-        Published: "2014, 2016, 1999" 
+        Author: "The Author", 
+        Published: "The Published Date" 
     },
     
     2: {
@@ -183,26 +194,33 @@ var lib = {
 //insert dictionary/ api
 
 function getMangalist(req, res) {
-    let x = lib[1];
-    let y = lib[2];
+    let x;
     
     let answer = "Other List";
     
     let n = req.params.number;
     
-    if(n == 6) {
-        answer += x['Title'];
-        //console.log(dict.one.Title);
-        //return answer;
+    if(n == "147") {
+        x = lib[1];
+        answer = x['Title'];
         res.send(answer);
         console.log(answer);
         return;
-    } else if (n == 3){
-        answer += y['Title'];
-        //return answer;
+        
+    } else if (n == "148"){
+        x = lib[2];
+        answer = x['Title'];
         res.send(answer);
         console.log(answer);
         return;
+    
+    } else if (n == "149"){
+        x = lib[3];
+        answer = x['Title'];
+        res.send(answer);
+        console.log(answer);
+        return;
+        
     } else {
         res.send(answer);
     }
