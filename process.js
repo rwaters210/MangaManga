@@ -34,7 +34,7 @@ var lib = {
     },
     
     4: {
-        Title: "Hikaru no GO, Barakamon, Yotsuba&I", 
+        Title: "Hikaru no GO, Barakamon, Yotsuba&!", 
         Author: "Yumi Hotta and Takeshi Obata, Satsuki Yoshino, Kiyohiko Azuma", 
         Published: "1999, 2009, 2003" 
     },
