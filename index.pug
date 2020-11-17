@@ -1,0 +1,32 @@
+head
+  meta(charset='utf-8')
+  title Manga Manga
+  link(rel='stylesheet' href='index.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(src='index.js')
+h1(style='text-align:center') Manga Manga
+p(style='text-align:center')
+  button.button(onclick='hide()')  Start
+#Questions(style='text-align:center')
+  h2 Age
+  form
+    select#list1
+      option(value='Teen') 8-15
+      option(value='Young Adult') 16-24
+      option(value='Adult') 24-65
+    h2 Category
+    select#list2
+      option(value='Action') Action
+      option(value='Thriller') Thriller
+      option(value='Fantasy') Fantasy
+    h2 Length of Manga
+    select#list3
+      option(value='Short') Short
+      option(value='Medium') Medium
+      option(value='Long') Long
+  button#submit(onclick='getSelectValues()') Submit
+  br
+  br
+#MangaList(style='text-align:center' myfunction='success()')
+  | Welcome to Manga Manga!
+br
