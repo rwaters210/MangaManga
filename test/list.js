@@ -1,5 +1,9 @@
 class list {
 
+
+//Insert getMangalist function;
+//insert dictionary/ api
+
       getMangalist(n) {
         var lib = { 
         1: {
@@ -22,13 +26,13 @@ class list {
         
         //let n = req.params.number;
         
-        if(n == 6) {
+        if(n == "149") {
             answer += x['Title'];
             //console.log(dict.one.Title);
             return answer;
             //res.send(answer);
             console.log(answer);
-        } else if (n == 3){
+        } else if (n == "147"){
             answer += y['Title'];
             return answer;
             //res.send(answer);

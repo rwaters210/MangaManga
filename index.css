@@ -1,13 +1,59 @@
 body {
-    background-color: gray;
+    background-image: url('anime.jpg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
-h1 style{
+h1 {
     color: lime;
+    background-color: gray;
+    font-size: 50;
+    border-radius: 25px;
 }
+
 h2 {
     color: lime;
 }
 
+
 #MangaList {
     font-size: 60;
+}
+
+.button {
+  transition-duration: 0.4s;
+  background-color: black;
+  color: white;
+  font-size: 24;
+}
+
+.button:hover {
+  background-color: white; /* Green */
+  color: black;
+  font-size: 24;
+}
+
+#submit {
+  transition-duration: 0.4s;
+  background-color: black;
+  color: white;
+  font-size: 24;
+}
+
+#submit:hover {
+  background-color: white; /* Green */
+  color: black;
+  font-size: 24;
+}
+
+#Questions {
+    background-color: gray;
+    border-radius: 25px;
+    width: 100%;
+    display: none;
+}
+
+#MangaList {
+    background-color: gray;
+    border-radius: 25px;
 }

@@ -2,16 +2,16 @@ class score{
     
         getSelectValues(selectedValue1, selectedValue2, selectedValue3) {
         
-        let n = 0;
+        let n = "";
         switch(selectedValue1) {
             case "Teen":
-                n += 1;
+                n += "1";
             break;
             case "Young Adult":
-                n += 2;
+                n += "2";
             break;
             case "Adult":
-                n += 3;
+                n += "3";
             break;    
             default:
                 //nothing
@@ -19,13 +19,13 @@ class score{
         
         switch(selectedValue2) {
             case "Action":
-                n += 1;
+                n += "4";
             break;
             case "Thriller":
-                n += 2;
+                n += "5";
             break;
             case "Fantasy":
-                n += 3;
+                n += "6";
             break;    
             default:
                 //nothing
@@ -33,13 +33,13 @@ class score{
         
         switch(selectedValue3) {
             case "Short":
-                n += 1;
+                n += "7";
             break;
             case "Medium":
-                n += 2;
+                n += "8";
             break;
             case "Long":
-                n += 3;
+                n += "9";
             break;    
             default:
                 //nothing

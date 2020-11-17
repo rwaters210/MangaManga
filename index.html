@@ -5,16 +5,15 @@
     <link rel="stylesheet" href="index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
-    <script src="process.js"></script>
 </head>
 <body>
     <h1 style="text-align:center">Manga Manga</h1>
     
     <p style="text-align:center">
-    <button  onclick="hide()" > Start</button>
+    <button  class="button" onclick="hide()" > Start</button>
     </p>
     
-    <div id="Questions" style="text-align:center" >
+    <div id="Questions" style="text-align:center">
         <h2>Age</h2>
         <form> 
             <select id="list1" >
@@ -38,25 +37,18 @@
             </select>
            
         </form>
-        <button  onclick="getSelectValues()" >Submit</button>
+        <button id="submit" onclick="getSelectValues()" >Submit</button>
         
         <br>
         <br>
         
     </div>
     
-    <div style="text-align:center" id ="MangaList">
-        Practice connecting API!!!
+    <div style="text-align:center" id ="MangaList" myFunction="success()">
+        Welcome to Manga Manga!
     </div>
     
     <br>
-     <style>
-       body{
-           background-image: url('anime.jpg.png');
-           background-repeat: no-repeat;
-           background-attachment: fixed;
-           background-size: 100% 100%;
-       }
-   </style>
+   
 </body>
 </html>
