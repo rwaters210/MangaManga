@@ -57,3 +57,37 @@ h2 {
     background-color: gray;
     border-radius: 25px;
 }
+
+#getLink {
+    display: block;
+}
+
+#read {
+  transition-duration: 0.4s;
+  background-color: black;
+  color: white;
+  font-size: 24;
+}
+
+#read:hover {
+  background-color: white; /* Green */
+  color: black;
+  font-size: 24;
+}
+
+a:link, a:visited {
+  background-color: lime;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 30px;
+}
+
+a:hover, a:active {
+  background-color: gray;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 30px;
+}
