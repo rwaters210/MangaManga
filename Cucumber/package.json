@@ -1,0 +1,11 @@
+{
+  "name": "steps",
+  "version": "1.0.0",
+  "description": "BDD",
+  "main": "cucumber.js",
+  "scripts": {
+    "cucumber": "cucumber-js ./myFeatures -r ./steps"
+  },
+  "author": "",
+  "license": "ISC"
+}
