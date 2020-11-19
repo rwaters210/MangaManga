@@ -75,6 +75,18 @@ function getSelectValues() {
     console.log(n);
     
     console.log("Score sent to server" + n);
+    
+    let x = document.getElementById("getLink");
+    x.style.display = "block";
+    /*
+      if (x.style.display == "none") {
+        x.style.display = "block";
+      }
+      */
+}
+
+function readLink () {
+    console.log("readLink works!!!");
 }
 
 
