@@ -59,7 +59,7 @@ h2 {
 }
 
 #getLink {
-    display: block;
+    display: none;
 }
 
 #read {
@@ -91,3 +91,5 @@ a:hover, a:active {
   font-family: Impact, Charcoal, sans-serif;
   font-size: 30px;
 }
+
+    
